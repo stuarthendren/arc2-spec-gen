@@ -1,0 +1,248 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<html
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:mvcb="http://webns.net/mvcb/"
+  xml:lang="en"
+>
+
+  <head>
+    <title>Dublin Core DL Element Set</title>
+    <meta http-equiv="content-type" content="text/xhtml+xml; charset=utf-8" />
+    <link rel="mvvb:generatorAgent" type="application/rdf+xml" title="DOAP" href="http://rdfohloh.wikier.org/project/specgen" />
+    <link rel="stylesheet" type="text/css" href="http://example.org/style.css" />
+    <style type="text/css">
+/*<![CDATA[*/
+body {
+  padding: 2em 1em 2em 70px;
+  margin: 0;
+  font-family: sans-serif;
+  color: black;
+  background: white;
+  background-position: top left;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+:link { color: #00C; background: transparent }
+:visited { color: #609; background: transparent }
+a:active { color: #C00; background: transparent }
+
+a:link img, a:visited img { border-style: none } /* no border on img links */
+
+a img { color: white; }        /* trick to hide the border in Netscape 4 */
+@media all {                   /* hide the next rule from Netscape 4 */
+  a img { color: inherit; }    /* undo the color change above */
+}
+
+th, td { /* ns 4 */
+  font-family: sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 { text-align: left }
+/* background should be transparent, but WebTV has a bug */
+h1, h2, h3 { color: #005A9C; background: white }
+h1 { font: 170% sans-serif }
+h2 { font: 140% sans-serif }
+h3 { font: 120% sans-serif }
+h4 { font: bold 100% sans-serif }
+h5 { font: italic 100% sans-serif }
+h6 { font: small-caps 100% sans-serif }
+
+.hide { display: none }
+
+div.head { margin-bottom: 1em }
+div.head h1 { margin-top: 2em; clear: both }
+div.head table { margin-left: 2em; margin-top: 2em }
+
+p.copyright { font-size: small }
+p.copyright small { font-size: small }
+
+@media screen {  /* hide from IE3 */
+a[href]:hover { background: #ffa }
+}
+.sec-glance {
+	padding: 1em;
+	border: dotted;
+	background-color: #ddd;
+}
+
+/*
+p {
+  margin-top: 0.6em;
+  margin-bottom: 0.6em;
+}
+*/
+dt, dd { margin-top: 0; margin-bottom: 0 } /* opera 3.50 */
+dt { font-weight: bold }
+
+pre, code { font-family: monospace } /* navigator 4 requires this */
+
+ul.toc, ol.toc {
+  list-style: disc;		/* Mac NS has problem with 'none' */
+  list-style: none;
+}
+
+.new { color: #FF0000 }
+
+.example {
+	padding: 1em;
+	border: none;
+	background-color: #ddd;
+}
+
+.figure {
+         font-weight: bold;
+         text-align: center; }
+
+div.example {
+    padding: 1em;
+    background-color: #ddd;
+    border: 1px solid #cfcfcf; }
+
+/*]]>*/
+</style>
+
+  </head>
+
+  <body>
+
+    <h1 id="title">Dublin Core DL Element Set</h1>
+
+    <h2 id="subtitle">Web Ontology Language serialization of the Dublin Core Metadata Element Set, Version 1.1</h2>
+
+    <h3 id="mymw-doctype">Working Draft &mdash; 01 October 2008</h3>
+
+    <dl>
+
+      <dt>This version:</dt>
+      <dd><a href="http://stuarthendren.net/dublincore.owl">http://stuarthendren.net/dublincore.owl</a></dd>
+
+      <dt>Last Update:</dt>
+      <dd>Date: 01 October 2008</dd>
+
+      <dt>Editor:</dt>
+      <dd>Stuart Hendren</dd>
+
+    </dl>
+
+    <p class="copyright">This version of the Dublin Core Elements is not endorsed or supported by the Dublin Core Metadata Inititive.
+    Copyright of the Dublin Core Elements remains with the Dublin Core Metadata Inititive under their original terms. Copyright © 2008 Dublin Core Metadata Initiative. All Rights Reserved. http://www.dublincore.org/about/copyright/</p>
+
+    <!-- ===================================================================== -->
+
+    <hr />
+
+    <h2 id="abstract">Abstract</h2>
+    <p>
+      	This document provides ready reference for the Dublin Core DL Element Set, Version 1.1 written in the <a href="http://www.w3.org/TR/owl-guide/">Web Ontology Language</a>.
+      	This eases the use of the elements in an OWL DL ontology.
+      	For more detailed documentation and links to historical versioning information, see the document "DCMI Metadata Terms".
+    </p>
+
+    <h2 id="status">Status of this Document</h2>
+    <p>
+      <strong>This is version 1.0</strong> This document is subject to change depending on changes to the original Dublin Core Element Set.
+      Comments are very welcome, please send them to <a href="mailto:me@stuarthendren.net">me@stuarthendren.net</a>. Thank you.
+    </p>
+
+    <h2 id="contents">Table of Contents</h2>
+    <ol id="toc">
+      <li><a href="#intro">Introduction</a></li>
+      <li><a href="#sec-glance">Dublin Core Element Set at a glance</a></li>
+      <li>
+        <a href="#overview">Dublin Core Element Set overview</a>
+        <ol>
+          <li><a href="#s31">Example</a></li>
+        </ol>
+      </li>
+      <li><a href="#reference">Cross-reference for Dublin Core Element Set</a></li>
+    </ol>
+    <hr />
+
+    <!-- ===================================================================== -->
+
+    <h2 id="intro">1 Introduction</h2>
+
+  <p>The Dublin Core Metadata Element Set is a vocabulary of fifteen properties for use in resource description. The name "Dublin" is due to its origin at a 1995 invitational workshop in Dublin, Ohio; "core" because its elements are broad and generic, usable for describing a wide range of resources.</p>
+
+<p>The fifteen element "Dublin Core" described in this standard is part of a larger set of metadata vocabularies and technical specifications maintained by the Dublin Core Metadata Initiative (DCMI). The full set of vocabularies, DCMI Metadata Terms [DCMI-TERMS], also includes sets of resource classes (including the DCMI Type Vocabulary [DCMI-TYPE]), vocabulary encoding schemes, and syntax encoding schemes. The terms in DCMI vocabularies are intended to be used in combination with terms from other, compatible vocabularies in the context of application profiles and on the basis of the DCMI Abstract Model [DCAM].</p>
+
+<p>All changes made to terms of the Dublin Core Metadata Element Set since 2001 have been reviewed by a DCMI Usage Board in the context of a DCMI Namespace Policy [DCMI-NAMESPACE]. The namespace policy describes how DCMI terms are assigned Uniform Resource Identifiers (URIs) and sets limits on the range of editorial changes that may allowably be made to the labels, definitions, and usage comments associated with existing DCMI terms.</p>
+
+<p>This document, an excerpt from the more comprehensive document "DCMI Metadata Terms" [DCTERMS] provides an abbreviated reference version of the fifteen element descriptions that have been formally endorsed in the following standards:
+
+<ol>
+    <li> ISO Standard 15836-2003 of February 2003 [ISO15836]</li>
+    <li> ANSI/NISO Standard Z39.85-2007 of May 2007 [NISOZ3985]</li>
+    <li> IETF RFC 5013 of August 2007 [RFC5013]</li>
+</ol>
+<p>Since 1998, when these fifteen elements entered into a standardization track, notions of best practice in the Semantic Web have evolved to include the assignment of formal domains and ranges in addition to definitions in natural language. Domains and ranges specify what kind of described resources and value resources are associated with a given property. Domains and ranges express the meanings implicit in natural-language definitions in an explicit form that is usable for the automatic processing of logical inferences. When a given property is encountered, an inferencing application may use information about the domains and ranges assigned to a property in order to make inferences about the resources described thereby.
+
+<p>Since January 2008, therefore, DCMI includes formal domains and ranges in the definitions of its properties. So as not to affect the conformance of existing implementations of "simple Dublin Core" in RDF, domains and ranges have not been specified for the fifteen properties of the dc: namespace (http://purl.org/dc/elements/1.1/). Rather, fifteen new properties with "names" identical to those of the Dublin Core Metadata Element Set Version 1.1 have been created in the dcterms: namespace (http://purl.org/dc/terms/). These fifteen new properties have been defined as subproperties of the corresponding properties of DCMES Version 1.1 and assigned domains and ranges as specified in the more comprehensive document "DCMI Metadata Terms" [DCTERMS].
+
+<p>Implementers may freely choose to use these fifteen properties either in their legacy dc: variant (e.g., http://purl.org/dc/elements/1.1/creator) or in the dcterms: variant (e.g., http://purl.org/dc/terms/creator) depending on application requirements. The RDF schemas of the DCMI namespaces describe the subproperty relation of dcterms:creator to dc:creator for use by Semantic Web-aware applications. Over time, however, implementers are encouraged to use the semantically more precise dcterms: properties, as they more fully follow emerging notions of best practice for machine-processable metadata.
+
+    <!-- ===================================================================== -->
+
+    <h2 id="sec-glance">2. Dublin Core DL Element Set at a glance</h2>
+
+    <p>
+      An alphabetical index of Dublin Core Elements, is given below. All the terms are hyperlinked
+      to their detailed description for quick reference.
+    </p>
+
+    <!-- The list of classes and properties goes here -->
+    %s
+    <!-- End of the terms list -->
+
+    <!-- ===================================================================== -->
+
+    <h2 id="overview">3. Dublin Core DL Element Set Overview</h2>
+
+    <p>The Dublin Core DL Elements definitions presented here are taken from the original ...</p>
+
+    <h3 id="s31">3.1. Example</h3>
+
+    <p>Here is a very basic document describing a foo:</p>
+
+    <div class="example" style="white-space: pre-wrap;">
+      <pre>
+        &lt;rdf:RDF /&gt;
+      </pre>
+    </div>
+
+    <p>...</p>
+
+    <!-- ===================================================================== -->
+
+    <h2 id="reference">4. Cross-reference for Dublin Core DL Elements</h2>
+
+
+    <!-- The following is the script-generated list of classes and properties -->
+    %s
+    <!-- End of the terms list -->
+
+    <!-- ===================================================================== -->
+
+    <h2 id="references">A References</h2>
+
+    <dl>
+      <dt class="label" id="ref-some">name</dt>
+      <dd><em><a href="http://.../">long name</a></em> description...</dd>
+    </dl>
+
+    <h3 id="references-other">A.2 Other references</h3>
+
+    <dl>
+      <dt class="label" id="ref-rfc2119">IETF RFC 2119</dt>
+      <dd>
+        <em><a href="http://www.ietf.org/rfc/rfc2119.txt">RFC 2119: Key words
+        for use in RFCs to Indicate Requirement Levels</a></em>. Internet
+        Engineering Task Force, 1997 (see http://www.ietf.org/rfc/rfc2119.txt).
+      </dd>
+    </dl>
+
+    <!-- ===================================================================== -->
+
+  </body>
+
+</html>

@@ -1,0 +1,188 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:dctype="http://purl.org/dc/dcmitype/#"
+    xmlns:dcterms="http://purl.org/dc/terms/#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xml:base="http://purl.org/dc/elements/1.1/">
+  <owl:Ontology rdf:about="">
+    <dc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    > 
+     The Dublin Core Element Set v1.1 namespace  
+     provides URIs for the Dublin Core Elements v1.1.  
+     Entries are declared using OWL language to  
+     support OWL applications. 
+  </dc:description>
+    <dc:source rdf:resource="http://dublincore.org/documents/dces/"/>
+    <dc:source rdf:resource="http://dublincore.org/usage/decisions/"/>
+    <dc:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    > 
+     The Dublin Core Element Set v1.1 namespace  
+     providing access to its content by means of an  
+     OWL DL Ontology 
+  </dc:title>
+    <dc:publisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    > 
+     The Dublin Core Metadata Initiative 
+  </dc:publisher>
+    <dc:language rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    > 
+     English 
+  </dc:language>
+  </owl:Ontology>
+  <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/rights">
+    <dc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Typically, a Rights element will contain a rights management statement for the resource, or reference a service providing such information. Rights information often encompasses Intellectual Property Rights (IPR),           Copyright, and various Property Rights. If the Rights element is absent, no assumptions can be made about the status of these and other rights with respect to the resource.
+    </dc:description>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Rights Management</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Information about rights held in and over the resource.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <dc:type rdf:resource="http://dublincore.org/usage/documents/principles/#element"/>
+  </owl:AnnotationProperty>
+  <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >An entity primarily responsible for making the content of the resource.</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Creator</rdfs:label>
+    <dc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Examples of a Creator include a person, an organisation, or a service.  Typically, the name of a Creator should be used to indicate the entity.</dc:description>
+    <dc:type rdf:resource="http://dublincore.org/usage/documents/principles/#element"/>
+    <rdfs:isDefinedBy rdf:resource=""/>
+  </owl:AnnotationProperty>
+  <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description">
+    <dc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Description may include but is not limited to: an abstract, table of contents, reference to a graphical representation of content or a free-text account of the content.</dc:description>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >An account of the content of the resource.</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Description</rdfs:label>
+    <dc:type rdf:resource="http://dublincore.org/usage/documents/principles/#element"/>
+    <rdfs:isDefinedBy rdf:resource=""/>
+  </owl:AnnotationProperty>
+  <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/relation">
+    <dc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Recommended best practice is to reference the resource by means of a string or number conforming to a formal identification system.   </dc:description>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A reference to a related resource.</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Relation</rdfs:label>
+    <dc:type rdf:resource="http://dublincore.org/usage/documents/principles/#element"/>
+    <rdfs:isDefinedBy rdf:resource=""/>
+  </owl:AnnotationProperty>
+  <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/format">
+    <dc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Typically, Format may include the media-type or dimensions of the resource. Format may be used to determine the software, hardware or other equipment needed to display or operate the resource. Examples of dimensions include size and duration. Recommended best practice is to select a value from a controlled vocabulary (for example, the list of Internet Media Types [MIME] defining computer media formats).</dc:description>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Format</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The physical or digital manifestation of the resource.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource=""/>
+    <dc:type rdf:resource="http://dublincore.org/usage/documents/principles/#element"/>
+  </owl:AnnotationProperty>
+  <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/publisher">
+    <dc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Examples of a Publisher include a person, an organisation, or a service. Typically, the name of a Publisher should be used to indicate the entity.</dc:description>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >An entity responsible for making the resource available</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Publisher</rdfs:label>
+    <dc:type rdf:resource="http://dublincore.org/usage/documents/principles/#element"/>
+    <rdfs:isDefinedBy rdf:resource=""/>
+  </owl:AnnotationProperty>
+  <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/source">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A reference to a resource from which the present resource is derived.</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Source</rdfs:label>
+    <dc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The present resource may be derived from the Source resource in whole or in part.  Recommended best practice is to reference the resource by means of a string or number conforming to a formal identification system.</dc:description>
+    <dc:type rdf:resource="http://dublincore.org/usage/documents/principles/#element"/>
+    <rdfs:isDefinedBy rdf:resource=""/>
+  </owl:AnnotationProperty>
+  <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A date associated with an event in the life cycle of the resource.</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Date</rdfs:label>
+    <dc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Typically, Date will be associated with the creation or availability of the resource.  Recommended best practice for encoding the date value is defined in a profile of ISO 8601 [W3CDTF] and follows the YYYY-MM-DD format.</dc:description>
+    <dc:type rdf:resource="http://dublincore.org/usage/documents/principles/#element"/>
+    <rdfs:isDefinedBy rdf:resource=""/>
+  </owl:AnnotationProperty>
+  <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title">
+    <dc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Typically, a Title will be a name by which the resource is formally known.</dc:description>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A name given to the resource.</rdfs:comment>
+    <dc:type rdf:resource="http://dublincore.org/usage/documents/principles/#element"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Title</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource=""/>
+  </owl:AnnotationProperty>
+  <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/coverage">
+    <dc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Coverage will typically include spatial location (a place name or geographic coordinates), temporal period (a period label, date, or date range) or jurisdiction (such as a named administrative entity). Recommended best practice is to select a value from a controlled vocabulary (for example, the Thesaurus of Geographic Names [TGN]) and that, where appropriate, named places or time periods be used in preference to numeric identifiers such as sets of coordinates or date ranges.</dc:description>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Coverage</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The extent or scope of the content of the resource.</rdfs:comment>
+    <dc:type rdf:resource="http://dublincore.org/usage/documents/principles/#element"/>
+    <rdfs:isDefinedBy rdf:resource=""/>
+  </owl:AnnotationProperty>
+  <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/language">
+    <dc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Recommended best practice is to use RFC 3066 [RFC3066], which, in conjunction with ISO 639 [ISO639], refines two- and three-letter primary language tags with optional subtags.  Examples include "en" or "eng" for English, "akk" for Akkadian, and "en-GB" for English used in the United Kingdom.</dc:description>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A language of the intellectual content of the resource.</rdfs:comment>
+    <dc:type rdf:resource="http://dublincore.org/usage/documents/principles/#element"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Language</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource=""/>
+  </owl:AnnotationProperty>
+  <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/subject">
+    <dc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Typically, a Subject will be expressed as keywords, key phrases or classification codes that describe a topic of the resource.  Recommended best practice is to select a value from a controlled vocabulary or formal classification scheme.</dc:description>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Subject and Keywords</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The topic of the content of the resource.</rdfs:comment>
+    <dc:type rdf:resource="http://dublincore.org/usage/documents/principles/#element"/>
+    <rdfs:isDefinedBy rdf:resource=""/>
+  </owl:AnnotationProperty>
+  <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/identifier">
+    <dc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Recommended best practice is to identify the resource by means of a string or number conforming to a formal identification system. Example formal identification systems include the Uniform Resource Identifier (URI) (including the Uniform Resource Locator (URL)), the Digital Object Identifier (DOI) and the International Standard Book Number (ISBN).</dc:description>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Resource Identifier</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >An unambiguous reference to the resource within a given context.</rdfs:comment>
+    <dc:type rdf:resource="http://dublincore.org/usage/documents/principles/#element"/>
+    <rdfs:isDefinedBy rdf:resource=""/>
+  </owl:AnnotationProperty>
+  <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/type">
+    <dc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Type includes terms describing general categories, functions, genres, or aggregation levels for content. Recommended best practice is to select a value from a controlled vocabulary (for example, the DCMI Type Vocabulary [DCMITYPE]). To describe the physical or digital manifestation of the resource, use the Format element.</dc:description>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Resource Type</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The nature or genre of the content of the resource.</rdfs:comment>
+    <dc:type rdf:resource="http://dublincore.org/usage/documents/principles/#element"/>
+    <rdfs:isDefinedBy rdf:resource=""/>
+  </owl:AnnotationProperty>
+  <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >An entity responsible for making contributions to the content of the resource.</rdfs:comment>
+    <dc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Examples of a Contributor include a person, an organisation, or a service.  Typically, the name of a Contributor should be used to indicate the entity.</dc:description>
+    <dc:type rdf:resource="http://dublincore.org/usage/documents/principles/#element"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Contributor</rdfs:label>
+    <rdfs:isDefinedBy rdf:resource=""/>
+  </owl:AnnotationProperty>
+</rdf:RDF>
+
